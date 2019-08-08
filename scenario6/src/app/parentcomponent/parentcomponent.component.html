@@ -1,0 +1,8 @@
+<!--print message from the sibiling that fetched through the parent-->
+<h1>
+    {{message}}
+</h1>
+<!--Connect to the child2 to get data-->
+<app-child2component [parentData]="message"></app-child2component>
+<!--Connect to child1 to send the data-->
+<app-child1component (childEvent)="message=$event"></app-child1component>

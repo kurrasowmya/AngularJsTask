@@ -1,0 +1,6 @@
+<!--Print message by interpolation-->
+<h1>
+    {{message}}
+</h1>
+<!--connecting to child to fetch data-->
+<app-childcomponent (childEvent)="message=$event"></app-childcomponent>
